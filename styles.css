@@ -1,0 +1,216 @@
+/* General styling */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: rgb(12, 12, 12);
+    color: white;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* Navbar styling */
+.navbar {
+    overflow: hidden;
+    list-style: none;
+}
+
+.navbar ul {
+    list-style: none;
+}
+
+.navbar li a {
+    display: block;
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+    padding: 10px 15px;
+    background: linear-gradient(45deg,  #d84baa, #dbaa72, #ebf9b8, #32ffaa, #13c5d7, violet);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-fill-color: transparent;
+    text-align: left;
+    width: 60px;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+/*Button Styling*/
+
+.fa {
+    padding: 10px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    transition-duration: 0.3s;
+  }
+  
+/* Add a hover effect if you want */
+.fa:hover {
+    background-color:rgb(0, 0, 0);
+}
+
+/* Twitter */
+.fa-twitter {
+    color: rgb(12, 12, 12);
+    background-image: linear-gradient(45deg, #d84baa, #dbaa72, #ebf9b8, #32ffaa, #13c5d7, violet);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.fa-linkedin {
+    color: rgb(12, 12, 12);
+    background-image: linear-gradient(45deg, #d84baa, #dbaa72, #ebf9b8, #32ffaa, #13c5d7, violet);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.fa-wordpress {
+    color: rgb(12, 12, 12);
+    background-image: linear-gradient(45deg, #d84baa, #dbaa72, #ebf9b8, #32ffaa, #13c5d7, violet) ;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.container {
+    position: relative;
+    height: 400px; /* Adjust the height as needed */
+    display: flex;
+    align-items: center;
+}
+
+
+.vertical-line-with-circle {
+    position: relative;
+    width: 2px; /* Line width */
+    height: 100%; /* Line height, adjust as needed */
+    background: linear-gradient(45deg, #d84baa, #dbaa72, #ebf9b8, #32ffaa, #13c5d7, violet); /* Line color */
+    margin: 0 auto; /* Center the line horizontally */
+}
+
+.vertical-line-with-circle::before {
+    content: '';
+    position: absolute;
+    top: 50%; /* Position in the middle */
+    left: 50%; /* Center the circle horizontally */
+    transform: translate(-50%, -50%); /* Center alignment */
+    width: 90px; /* Circle diameter, adjust as needed */
+    height: 90px; /* Circle diameter, adjust as needed */
+    background: linear-gradient(45deg, #d84baa, #dbaa72, #ebf9b8, #32ffaa, #13c5d7, violet); /* Circle color */
+    border-radius: 50%; /* Makes the element a circle */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center the logo in the circle */
+    width: 70px; /* Adjust as needed */
+    height: 85px; /* Adjust as needed */
+    color: rgb(0, 0, 0);
+}
+
+/* Container styling */
+.container {
+    display: flex;
+    height: calc(100vh - 48px); /* Subtracting nav height */
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+.section {
+    flex: 1;
+    box-sizing: border-box;
+    margin-left: 80px;
+}
+
+.scrollable {
+    scroll-behavior: smooth;
+    overflow-y: auto;
+    height: 80%;
+    margin-right: 80px;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.section h1 {
+    font-size: 50px;
+}
+.scrollable p {
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.project {
+    display: flex;
+    border-radius: 10px;
+    transition-duration: 0.3s;
+    padding-bottom: 20px;
+}
+
+.project:hover {
+    background-color:rgb(0, 0, 0);
+}
+
+img {
+    border-radius: 10px;
+    padding: 20px;
+    height: 100px;
+    width: 100px;
+}
+
+h1, h2, h3, p {
+    background: linear-gradient(45deg, #d84baa, #dbaa72, #ebf9b8, #32ffaa, #13c5d7, violet);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.paragraph {
+    transition: background-color 0.3s ease;
+}
+
+.paragraph:hover {
+    background-color: black;
+}
+
+
+.line-wrapper {
+    position: relative;
+  }
+  
+  .horizontal-line {
+    position: absolute;
+    top: 38px;
+    left: 46.8%;
+    width: 50vw;
+    height: 2px;
+    background: linear-gradient(45deg, #d84baa, #dbaa72, #ebf9b8, #32ffaa, #13c5d7, violet);
+  }
+
+  .bottom-horizontal-line {
+    position: absolute;
+    bottom: 0;          /* Position at the bottom of the page */
+    left: 40px;            /* Start from the left edge */
+    width: 43.8vw;        /* Stretch halfway across the viewport */
+    height: 2px;        /* Line thickness */
+    background: linear-gradient(45deg, #d84baa, #dbaa72, #ebf9b8, #32ffaa, #13c5d7, violet);
+  }
+
+  .bottom-left-spiral {
+    position: absolute;
+    bottom: 5.7px;
+    left: 5px;
+    transform: rotate(180deg);
+  }
+
+  .top-right-spiral {
+    position: absolute;
+    top: 34px;
+    right: 8px;
+    z-index: 10;
+  }
